@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+/* 
+
+COLORS:
+
+    #059669 < - verde escuro
+    #ffff < branco 
+*/
+
+body{
+    background-color: #059669;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    height: 60%;
+    width: 40%;
+    background-color: #065f46;
+    color: white;
+    border-radius: 26px;
+    border: solid 2px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+input{
+    width: 300px;
+    padding: 12px 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+input::placeholder{
+    font-size: 17px;
+}
+
+textarea{
+    padding: 8px 10px;
+    outline: none;
+}
+
+.container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button{
+    padding: 7px 20px;
+    font-size: 16px;
+    background-color: #022c22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+button:hover{
+    background-color: #011611;
+}
+
+.tasks-container{
+    width: 50%;
+    padding: 20px;
+}
+
+.tasks-container ul{
+    list-style: none;
+}
+
+.tasks-container ul li{
+    margin-bottom: 10px;
+    background-color: #022c22;
+    color: white;
+    padding: 4px 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tasks-container ul li:hover{
+    background-color: #dc2626;
+    cursor: pointer;
+}
+
+.tasks-container ul li::before{
+    content: "->";
+    color: #fff;
+}
